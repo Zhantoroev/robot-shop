@@ -5,7 +5,7 @@ metadata:
   labels:
     service: cart
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicas }}
   selector:
     matchLabels:
       service: cart
